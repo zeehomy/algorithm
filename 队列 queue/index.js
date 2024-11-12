@@ -1,6 +1,6 @@
 /*
  * @Description: 
- * @FilePath: \algorithm\queue\index.js
+ * @FilePath: \algorithm\队列 queue\index.js
  */
 const queue = [];
 queue.push(1);
