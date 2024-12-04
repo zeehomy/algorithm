@@ -54,7 +54,7 @@ const preorderNoRecursion = (root) => {
   const stack = [root];
   while (stack.length) {
     
-    // 弹出栈顶元素
+    // 弹出栈顶元素（访问一个节点）
     const stackTop = stack.pop();
     console.log(stackTop.value);
 
