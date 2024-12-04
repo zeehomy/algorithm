@@ -1,5 +1,5 @@
 /*
- * @Description: 
+ * @Description: 先序遍历
  * @FilePath: \algorithm\树 tree\preorder 先序遍历.js
  */
 const binaryTree = require('./binaryTree');
@@ -58,7 +58,7 @@ const preorderNoRecursion = (root) => {
     const stackTop = stack.pop();
     console.log(stackTop.value);
 
-    // 为了模拟递归，需要将右子树先入栈，再入栈左子树
+    // 为了模拟调用栈，需要将右子树先入栈，再入栈左子树
     if (stackTop.right) {
       stack.push(stackTop.right);
     }
@@ -70,4 +70,4 @@ const preorderNoRecursion = (root) => {
 }
 
 console.log('非递归');
-preorderNoRecursion(binaryTree);
+preorderNoRecursion(binaryTree);    //  1，2，4，5，3，6，7

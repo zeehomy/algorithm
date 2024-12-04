@@ -1,3 +1,7 @@
+/*
+ * @Description: 中序遍历
+ * @FilePath: \algorithm\树 tree\inorder 中序遍历.js
+ */
 const binaryTree = require('./binaryTree');
 
 // 中序遍历 : 左根右
@@ -16,3 +20,27 @@ const inorder = (root) => {
 };
 
 inorder(binaryTree);
+
+// 非递归版
+const inorderNoRecursion = (root) => {
+  
+  const p = root;
+  while(p.left) {
+
+    p = p.left;
+
+  }
+
+};
+
+// const stack = [];
+//   let p = root;
+//   while (stack.length || p) {
+//     while (p) {
+//       stack.push(p);
+//       p = p.left;
+//     }
+//     const n = stack.pop();
+//     console.log(n.value);
+//     p = n.right;
+//   }
