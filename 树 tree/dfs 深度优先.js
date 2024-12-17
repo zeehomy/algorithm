@@ -1,3 +1,7 @@
+/*
+ * @Description: 深度优先遍历
+ * @FilePath: \algorithm\树 tree\dfs 深度优先.js
+ */
 const tree = {
   name: 'a',
   children: [
@@ -54,4 +58,4 @@ const dfs = (root) => {
   root.children && root.children.forEach(dfs);
 };
 
-dfs(tree);
+dfs(tree);    // a, b, e, f, c, g, k, l, h, d, i, j, m, n

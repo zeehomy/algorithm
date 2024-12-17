@@ -1,6 +1,6 @@
 /*
  * @Description: 
- * @FilePath: \algorithm\树 tree\bfs.js
+ * @FilePath: \algorithm\树 tree\bfs 广度优先.js
  */
 const tree = {
   name: 'a',
@@ -69,4 +69,4 @@ const bfs = (root) => {
   }
 };
 
-bfs(tree);
+bfs(tree);     // a b c d e f g h i j k l m n
