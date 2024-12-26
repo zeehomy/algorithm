@@ -46,7 +46,7 @@ const tree = {
 }
 
 // 1. 新建一个队列，把根节点入队；
-// 2. 对头出队并访问；
+// 2. 队头出队并访问；
 // 3. 将头节点的children挨个入队；
 // 4. 重复2，3，直到队列为空。
 
@@ -70,3 +70,24 @@ const bfs = (root) => {
 };
 
 bfs(tree);     // a b c d e f g h i j k l m n
+
+// 
+const tree2 = {
+  name: '3',
+  children: [
+    {
+      name: '9'
+    },
+    {
+      name: '20',
+      children: [
+        {
+          name: '15'
+        },
+        { name: '7' }
+      ]
+    }
+  ]
+};
+
+// bfs(tree2)  // 3 9 20 15 7
